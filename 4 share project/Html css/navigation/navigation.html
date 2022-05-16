@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="style/nav.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>navigation bar</title>
+</head>
+<body>
+<div class="container">
+	<nav class="active" id="navigation">
+		<div class="bar"><span class="mid"></span></div>
+		<ul>
+			<li class="active"><a href="#"><span class="icon"><img src="icon/home.svg"alt="icon"></span><span class="nav_txt">Home</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/AllFiles.svg"alt="icon"></span><span class="nav_txt">All Files</a></li>
+			<li><a href="#"><span class="icon"><img src="icon/Document.svg"alt="icon"></span><span class="nav_txt">Document</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/image.svg"alt="icon"></span><span class="nav_txt">Images</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/Music.svg"alt="icon"></span><span class="nav_txt">Music</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/Video.svg"alt="icon"></span><span class="nav_txt">Videos</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/setting.svg"alt="icon"></span><span class="nav_txt">Setting</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/about.svg"alt="icon"></span><span class="nav_txt">About</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/contact.svg"alt="icon"></span><span class="nav_txt">Contact us</span></a></li>
+			<li><a href="#"><span class="icon"><img src="icon/logout.svg"alt="icon"></span><span class="nav_txt">Logout</span></a></li>
+
+
+		</ul>
+	</nav>
+	<div class="content"></div>
+</div>
+
+   <script type="text/javascript">
+   	 $(document).ready(function(){
+   	  	$('.bar').click(function(){
+   	  		$('#navigation').toggleClass("active");
+   	  		$('.mid').toggleClass("active");
+   	  	
+   	  	});
+   	  });
+
+   </script>
+
+</body>
+</html>

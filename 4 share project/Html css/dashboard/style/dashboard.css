@@ -1,0 +1,23 @@
+.content{
+	position: relative;
+}
+.content .logo{
+position: absolute;
+width: 219px;
+height: 78px;
+left: 150px;
+top: 18px;
+
+font-family: 'Coustard';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 67px;
+
+background: linear-gradient(180deg, #E82929 0%, rgba(62, 34, 234, 0.58) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+}
