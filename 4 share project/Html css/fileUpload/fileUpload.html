@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/mob_nav.css">
+	<link rel="stylesheet" type="text/css" href="style/fileUpload.css">
+	<link rel="stylesheet" type="text/css" href="style/mob_fileUpload.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>file upload</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="barhead">
+			<div class="bar"><span class="mid"></span></div>
+		</div>
+		<nav class="active" id="navigation">
+
+			<ul>
+				<li class="active"><a href="#"><span class="icon"><img src="icon/home.svg" alt="icon"></span><span
+							class="nav_txt">Home</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/AllFiles.svg" alt="icon"></span><span
+							class="nav_txt">All Files</a></li>
+				<li><a href="#"><span class="icon"><img src="icon/Document.svg" alt="icon"></span><span
+							class="nav_txt">Document</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/image.svg" alt="icon"></span><span
+							class="nav_txt">Images</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/Music.svg" alt="icon"></span><span
+							class="nav_txt">Music</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/Video.svg" alt="icon"></span><span
+							class="nav_txt">Videos</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/setting.svg" alt="icon"></span><span
+							class="nav_txt">Setting</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/about.svg" alt="icon"></span><span
+							class="nav_txt">About</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/contact.svg" alt="icon"></span><span
+							class="nav_txt">Contact us</span></a></li>
+				<li><a href="#"><span class="icon"><img src="icon/logout.svg" alt="icon"></span><span
+							class="nav_txt">Logout</span></a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<div class="file_box">
+				<form action="/upload" method="get">
+					<h1>Drag & Drop the files here or</h1>
+
+					<div class="select_file">
+						<img src="fileIcon/selectFile.svg" alt="Select file image">
+						<input type='file' id='inputTypeFile' multiple />
+					</div>
+
+					<div class="upload_file">
+						<img src="fileIcon/uploadFile.svg" alt="Select file image">
+						<input type="submit" value="Upload Files" class="upload">
+					</div>
+				</form>
+
+				<div id="ShowFilesList"></div>
+			</div>
+		</div>
+		
+
+	</div>
+
+
+	<script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="js/fileUpload.js"></script>
+	
+
+</body>
+
+</html>
